@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+}   
+#main{
+    height: 650px;
+    background-color: orange;
+}
+#header{
+    height: 100px;
+    background-color: red;
+}
+#navigation{
+    height: 50px;
+    background-color: yellow;
+}
+#containt{
+    height:400px;
+}
+#footer{
+    height: 100px;
+    background-color:pink;
+}
+#left-containt{
+    width: 70%;
+    height: 400px;
+    overflow: hidden;
+    background-color: skyblue;
+    float:left;
+}
+#right-containt{
+    width: 30%;
+    height: 400px;
+    overflow: auto;
+    background-color: blueviolet;
+    float: right;
+}         
