@@ -1,5 +1,6 @@
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             body{
                 margin: 0;
@@ -30,9 +31,11 @@
             #menu ul li{
                 display: inline-block;
                 margin-right: 15px;
+                padding:10px;
             }
             #menu ul li a{
                 color: white;
+                padding:10px;
             }
             .containt{
                 text-align: center;
@@ -51,6 +54,28 @@
             }
             h1{
                 margin: 0;
+            }
+            .row{
+                width: 100%;
+                display: table;
+              
+                min-height: 200px;
+                border-spacing: 10px;
+            }
+            .column{
+                display: table-cell;
+                height: 200px;
+                box-sizing: border-box;
+                padding: 10px;
+                text-align: center;
+            }
+            .row .column i{
+                font-size: 100px;
+                color: orangered;
+            }
+            #menu ul li a:hover{
+                background-color: white;
+                color: blue;
             }
         </style>
     </head>
@@ -76,6 +101,40 @@
                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti eius quam optio <br> facilis incidunt neque.</p>
                <button>Watch more</button>
             </div>
+        </div>
+        <div class="row">
+            <div class="column">
+               <i class="fa fa-anchor"></i>
+               <h1>Some heading</h1>
+               <p>Lorem ipsum dolor sit amet.Lorem ipsum<br>dolor sit amet.Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="column">
+                <i class="fa fa-anchor"></i>
+                <h1>Some heading</h1>
+                <p>Lorem ipsum dolor sit amet.Lorem ipsum<br>dolor sit amet.Lorem ipsum dolor sit amet.</p>
+             </div>
+             <div class="column">
+                <i class="fa fa-anchor"></i>
+                <h1>Some heading</h1>
+                <p>Lorem ipsum dolor sit amet.Lorem ipsum<br>dolor sit amet.Lorem ipsum dolor sit amet.</p>
+             </div>
+        </div>
+        <div class="row">
+            <div class="column">
+               <i class="fa fa-anchor"></i>
+               <h1>Some heading</h1>
+               <p>Lorem ipsum dolor sit amet.Lorem ipsum<br>dolor sit amet.Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="column">
+                <i class="fa fa-arrows"></i>
+                <h1>Some heading</h1>
+                <p>Lorem ipsum dolor sit amet.Lorem ipsum<br>dolor sit amet.Lorem ipsum dolor sit amet.</p>
+             </div>
+             <div class="column">
+                <i class="fa fa-bar-chart"></i>
+                <h1>Some heading</h1>
+                <p>Lorem ipsum dolor sit amet.Lorem ipsum<br>dolor sit amet.Lorem ipsum dolor sit amet.</p>
+             </div>
         </div>
     </body>
 </html>
