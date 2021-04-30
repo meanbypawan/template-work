@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <style>
+            .main{
+                width: 400px;
+                height: 400px;
+                background-color: orangered;
+                animation-name: background-animation;
+                animation-duration: 0.5s;
+                animation-iteration-count: infinite;
+                border-radius: 50%;
+            }
+            @keyframes background-animation{
+               from{
+                  background-color: orangered;
+               }
+               to{
+                  background-color: blue;
+                  border-radius: 50%;
+               }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main"></div>
+    </body>
+</html>
