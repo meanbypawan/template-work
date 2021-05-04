@@ -6,18 +6,31 @@
                 height: 400px;
                 background-color: orangered;
                 animation-name: background-animation;
-                animation-duration: 0.5s;
+                animation-duration: 20s;
                 animation-iteration-count: infinite;
-                border-radius: 50%;
+              
             }
             @keyframes background-animation{
-               from{
+               0%{
                   background-color: orangered;
                }
-               to{
+               10%{
                   background-color: blue;
-                  border-radius: 50%;
+                  border-radius: 15%;
                }
+               30%{
+                background-color: pink;
+                  border-radius: 25%;
+                   
+               }
+               70%{
+                background-color: green;
+                  border-radius: 35%;
+                }
+                100%{
+                    background-color: black;
+                    border-radius: 50%;
+                }
             }
         </style>
     </head>
