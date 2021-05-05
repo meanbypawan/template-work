@@ -13,6 +13,10 @@
               display: flex;
               flex-direction: row;
               justify-content: space-between;
+              position: sticky;
+              top:0;
+              left: 0;
+              z-index: 1;
           }
           header ul{
               list-style: none;
@@ -82,10 +86,62 @@
            .sub-section{
                margin: 10px;
                border: 1px solid grey;
+               opacity: 0;
+               animation-name:section-animation;
+               animation-duration: 5s;
+               animation-iteration-count: 1;
+               animation-fill-mode: forwards;
+           }
+           @keyframes section-animation {
+               from{
+                   opacity: 0;
+               }
+               to{
+                   opacity: 1;
+               }
            }
            .sub-section h2,p{
                padding: 10px;
            } 
+           .read-more{
+               background: transparent;
+               border: 1px solid grey;
+               margin-left: 10px;
+               margin-bottom: 10px;
+               padding: 10px;
+               border-radius: 10px;
+           }
+           .read-more:hover{
+               background-color: #114e60;
+               color: white;
+               font-weight: bold;
+           }
+           aside{
+               margin-top: 5px;
+               margin-bottom: 5px;
+           }
+           aside h1{
+               color: white;
+           }
+           ol{
+               list-style: none;
+           }
+           ol li a{
+               margin-top: 10px;
+               display: block;
+           }
+           ol li a::before{
+               content: "$";
+               margin-right: 10px;
+           }
+           .footer{
+               background-color: #114e60;
+               display: flex;
+               justify-content: center;
+               color:white;
+               font-weight: bold;
+               padding: 15px;
+           }
         </style>
     </head>
     <body>
@@ -114,26 +170,39 @@
                  <li><a href="">some link</a></li>
                  <li><a href="">some link</a></li>
              </ul>
+             <h1>Some heading</h1>
+             <p>lorem20Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, cum.</p>
+             <h1>About us</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem maiores quam provident non doloremque ab delectus debitis. Quos obcaecati dolorem esse, amet totam neque eius.</p>
+             <h1>Our services</h1>
+             <ol>
+              <li><a href="">Mobile application</a></li>
+              <li><a href="">Web application</a></li>
+              <li><a href="">Website design</a></li>
+             </ol>
             </aside>
             <div class="containt">
                 <h1>Know about us</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ab minus optio velit fuga reiciendis necessitatibus nobis vero rerum numquam ducimus asperiores, voluptatum nesciunt. Ad vel nam consequuntur porro modi?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptate eos quasi esse minus voluptatum beatae suscipit dicta laudantium vitae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ab minus optio velit fuga reiciendis necessitatibus nobis vero rerum numquam ducimus asperiores, voluptatum nesciunt. Ad vel nam consequuntur porro modi?</p>
                 <h1>Techolgy used</h1>
                 <div class="section">
                     <div class="sub-section">
                         <img src="./images/java.png"/>
                         <h2>Java</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, praesentium?</p>
+                        <button class="read-more">Read more</button>
                     </div>
                     <div class="sub-section">
                         <img src="./images/android.jfif"/>
                         <h2>Android</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, praesentium?</p>
+                        <button class="read-more">Read more</button>
                     </div>
                     <div class="sub-section">
                         <img src="./images/html.png"/>
                         <h2>HTML</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, praesentium?</p>
+                        <button class="read-more">Read more</button>
                     </div>
                 </div>
                 <div class="section">
@@ -141,19 +210,23 @@
                         <img src="./images/java.png"/>
                         <h2>Java</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, praesentium?</p>
+                        <button class="read-more">Read more</button>
                     </div>
                     <div class="sub-section">
                         <img src="./images/android.jfif"/>
                         <h2>Android</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, praesentium?</p>
+                        <button class="read-more">Read more</button>
                     </div>
                     <div class="sub-section">
                         <img src="./images/html.png"/>
                         <h2>HTML</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, praesentium?</p>
+                        <button class="read-more">Read more</button>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="footer">Made by students</div>
     </body>
 </html>
