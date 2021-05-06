@@ -78,6 +78,8 @@
           .section{
               display: flex;
               justify-content: space-between;
+              flex-basis: 100%;
+              flex-wrap: wrap;
           }
           .section img{
               width: 100%;
@@ -91,6 +93,7 @@
                animation-duration: 5s;
                animation-iteration-count: 1;
                animation-fill-mode: forwards;
+               flex-basis: 25%;
            }
            @keyframes section-animation {
                from{
@@ -141,6 +144,34 @@
                color:white;
                font-weight: bold;
                padding: 15px;
+           }
+           @media screen and (max-width: 800px) {
+               .sub-section{
+                   flex-basis: 45%;
+               }
+           }
+           @media screen and (max-width: 600px){
+               header{
+                   flex-direction: column;
+                   position: static;
+               }
+               header ul{
+                   justify-content: center;
+                   padding: 5px;
+               }
+               #logo{
+                   order:-1;
+                   padding-top: 10px;
+               }
+               .main{
+                   flex-direction: column;
+               }
+               .containt{
+                   order:-1;
+               }
+               .sub-section{
+                   flex-basis: 100%;
+               }
            }
         </style>
     </head>
@@ -204,8 +235,6 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, praesentium?</p>
                         <button class="read-more">Read more</button>
                     </div>
-                </div>
-                <div class="section">
                     <div class="sub-section">
                         <img src="./images/java.png"/>
                         <h2>Java</h2>
@@ -224,7 +253,10 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, praesentium?</p>
                         <button class="read-more">Read more</button>
                     </div>
+               
                 </div>
+               
+                    
             </div>
         </div>
         <div class="footer">Made by students</div>
